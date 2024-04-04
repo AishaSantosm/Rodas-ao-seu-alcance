@@ -1,10 +1,86 @@
+:root {
+    --color-primary: #053325;
+    --color-title: #2C2B28;
+    --color-secondary: #6C9A8B;
+    --color-secondary-hover: #4d7266;
+    --color-beige: #F9E7E7;
+    --gray-clean: rgba(0, 0, 0, 0.43);
+    --box-shadow: 2px 4px 11.2px 0px rgba(0, 0, 0, 0.3);
+    --bg-button: rgba(30, 30, 30, 0.95);
+    --color-white-90: rgba(255, 255, 255, 0.90);
+}
+
 #navbar {
-    position: fixed; 
-    width: 100%; 
-   
+    position: fixed;
+    width: 100%;
+
 }
 
 #navbar .navbar-nav {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
+.w-card {
+    /*width: 33% !important;*/
+}
+
+.c-primary {
+    color: var(--color-primary);
+}
+
+.c-gray-clean {
+    color: var(--gray-clean);
+}
+
+.c-secondary {
+    color: var(--color-secondary);
+}
+
+.btn-primary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--bg-button);
+    color: var(--color-white-90);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+.slick-prev::before {
+    content: url(../img/icons/arrow-left.svg) !important;
+}
+
+.slick-next::before {
+    content: url(../img/icons/arrow-right.svg) !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    color: black !important;
+    background-color: white !important;
+    padding: 1em !important;
+    box-shadow: var(--box-shadow) !important;
+    border-radius: 9999px;
+}
+
+.slick-prev {
+    left: -15px !important;
+    z-index: 999;
+}
+
+.slick-next {
+    right: 30px !important;
+    z-index: 999;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.card {
+    border-radius: 14px;
+}
