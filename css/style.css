@@ -8,12 +8,26 @@
     --box-shadow: 2px 4px 11.2px 0px rgba(0, 0, 0, 0.3);
     --bg-button: rgba(30, 30, 30, 0.95);
     --color-white-90: rgba(255, 255, 255, 0.90);
+    --bg-inputs: rgba(242, 242, 242, 0.50);
+}
+
+* {
+    font-family: "Inter", sans-serif;
 }
 
 #navbar {
-    position: fixed;
     width: 100%;
+}
 
+.cover {
+    background-image: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.h-full {
+    height: 90vh;
 }
 
 #navbar .navbar-nav {
@@ -28,12 +42,32 @@
     color: var(--color-primary);
 }
 
+.fs-cover {
+    font-size: 45px;
+}
+
 .c-gray-clean {
     color: var(--gray-clean);
 }
 
 .c-secondary {
     color: var(--color-secondary);
+}
+
+.nav-link {
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.bg-bnt-beige {
+    background-color: var(--color-beige);
+}
+
+.img-us {
+    width: 70%;
 }
 
 .btn-primary {
@@ -48,6 +82,10 @@
 
 .btn-primary:hover {
     background-color: var(--color-secondary-hover);
+}
+
+.bg-input {
+    background-color: var(--bg-inputs);
 }
 
 .slick-prev::before {
@@ -82,5 +120,5 @@
 }
 
 .card {
-    border-radius: 14px;
+    border-radius: 14px !important;
 }
